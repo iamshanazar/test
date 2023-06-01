@@ -12,7 +12,7 @@ import type { FC } from 'react';
 		console.log('Failed: ;;;', errorInfo);
 	};
 	return (
-		<div style={{ marginLeft: '500px', width: '100%' }}>
+		<div style={{ marginLeft: '500px', width: 100%' }}>
 			<Form
 				name='basic'
 				labelCol={{ span: 8 }}

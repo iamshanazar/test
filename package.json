@@ -9,15 +9,10 @@
 		"preview": "vite preview",
 		"lint": "eslint . --ext .ts,.tsx,",
 		"lint:fix": "eslint \"src/**\" --fix --ext .ts,.tsx",
-		"prepare": "husky install"
-	},
-	"husky": {
+		"prepare": "husky install",
 		"hooks": {
-			"pre-commit": "lint-staged"
+			"pre-commit": "npm run lint"
 		}
-	},
-	"lint-staged": {
-		"*": "prettier --write"
 	},
 	"dependencies": {
 		"@ant-design/icons": "^5.0.1",
