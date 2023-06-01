@@ -2,17 +2,18 @@ import { UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Col, Form, Input, Row } from 'antd';
 import type { FC } from 'react';
 
-     const Register: FC = () => {
+const Register: FC = () => {
 	const onFinish = (values: any) => {
 		console.log('Success: have are you', values);
 		console.log();
 	};
 
 	const onFinishFailed = (errorInfo: any) => {
+		NoCompactStyle
 		console.log('Failed: ;;;', errorInfo);
 	};
 	return (
-		<div style={{ marginLeft: '500px', width: 100%' }}>
+		<div style={{ marginLeft: '500px', width: '100%' }}>
 			<Form
 				name='basic'
 				labelCol={{ span: 8 }}
