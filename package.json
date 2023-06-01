@@ -11,6 +11,14 @@
 		"lint:fix": "eslint \"src/**\" --fix --ext .ts,.tsx",
 		"prepare": "husky install"
 	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*": "prettier --write"
+	},
 	"dependencies": {
 		"@ant-design/icons": "^5.0.1",
 		"@reduxjs/toolkit": "^1.9.2",

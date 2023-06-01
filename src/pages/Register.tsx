@@ -2,9 +2,10 @@ import { UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Col, Form, Input, Row } from 'antd';
 import type { FC } from 'react';
 
-const Register: FC = () => {
+     const Register: FC = () => {
 	const onFinish = (values: any) => {
-		console.log('Success:', values);
+		console.log('Success: have are you', values);
+		console.log();
 	};
 
 	const onFinishFailed = (errorInfo: any) => {
